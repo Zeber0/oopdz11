@@ -19,14 +19,14 @@ class SmallObject : public Base
 {
 public:
 	SmallObject();
-	SmallObject(vector <wstring> xobj, vector<wstring>yobj);
+	SmallObject(vector <wstring> &xobj, vector<wstring>&yobj);
 	~SmallObject();
 };
 class BigObject : public Base
 {
 public:
 	BigObject();
-	BigObject(vector<wstring> xobj, vector<wstring> yobj);
+	BigObject(vector<wstring> &xobj, vector<wstring> &yobj);
 	~BigObject();
 };
 class DB:public vector<Base*>

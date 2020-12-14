@@ -10,7 +10,7 @@ Base::~Base()
 SmallObject::SmallObject()
 {
 }
-SmallObject::SmallObject(vector<wstring> xobj, vector<wstring> yobj)
+SmallObject::SmallObject(vector<wstring> &xobj, vector<wstring> &yobj)
 {
 	x.resize(xobj.size());
 	y.resize(xobj.size());
@@ -26,7 +26,7 @@ SmallObject::~SmallObject()
 BigObject::BigObject()
 {
 }
-BigObject::BigObject(vector<wstring> xobj, vector<wstring> yobj)
+BigObject::BigObject(vector<wstring> &xobj, vector<wstring> &yobj)
 {
 	x.resize(xobj.size());
 	y.resize(xobj.size());
